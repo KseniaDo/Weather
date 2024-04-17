@@ -1,0 +1,202 @@
+*{
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #a6babf;
+}
+
+.container{
+    width: 60vw;
+    min-height: 100vh;
+    background-color: #5e757a;
+}
+
+.search{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.searchLine{
+    width: 30vw;
+    height: 5vw;
+
+    max-width: 412px;
+    max-height: 50px;
+
+    border: 1px white solid;
+    border-radius: 15px;
+
+    text-align: center;
+}
+
+.searchLine:focus{
+    outline: none;
+}
+
+
+.iconStyle{
+    position: relative;
+
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+
+    width: 30vw;
+    height: 5vw;
+
+    max-width: 412px;
+    max-height: 50px;
+}
+
+.iconSearch{
+    position: absolute;
+    margin: auto;
+    top:0;
+    left: 1vw;
+    bottom: 0;
+    right: auto;
+
+    width: 3vw;
+    height: 3vw;
+
+    max-width: 20px;
+    max-height: 20px;
+
+    cursor: pointer;
+}
+
+.elements{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.element{
+    margin-bottom: 1vw;
+    width: 18vw;
+    height: 25vw;
+
+}
+
+.weather{
+    position: relative;
+    width: 18vw;
+    height: 25vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+
+    transition: all 1s ease-in-out;
+}
+
+.btnClose{
+    cursor: pointer;
+    position: absolute;
+    top: -0.5vw;
+    right: -0.5vw;
+    width: 2.2vw;
+    height: 2.2vw;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.weatherIcon{
+    width: 5vw;
+    max-width: 96px;
+}
+
+.text{
+    cursor: default;
+    text-align: center;
+    margin: unset;
+    font-size: 1.5vw;
+}
+
+.cityName{
+    margin-top: 1.2vw;
+    margin-bottom: 0.5vw;
+
+    padding-top: 1vw;
+}
+
+.city{
+    font-size: 1.8vw;
+}
+
+.mainInfo{
+    display: flex;
+    align-items: flex-end;
+
+    margin: unset;
+}
+
+.mainTemp{
+    margin-left: 0.7vw;
+}
+
+.temp{
+    font-size: 5vw;
+}
+
+.feelsLike{
+    display: flex;
+}
+
+.tempFeelsLike, .weatherDescription{
+    font-size: 1vw;
+}
+
+.temp, .tempFeelsLike{
+    margin-right: 0.6vw;
+}
+
+.mainWeather{
+    margin-right: 0.7vw;
+}
+
+.maxMinTemp{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 1.5vw;
+}
+
+.weatherIconTemp{
+    margin: unset;
+    width: 2.5vw;
+    max-width: 48px;
+}
+
+.tempMaxMin{
+    margin-right: 0.7vw;
+    font-size: 1.9vw;
+}
+
+.moreInfo{
+    width: inherit;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0.9vw;
+}
+
+.infoElem{
+    align-items: center;
+}
+
+.textInfoElem{
+    margin-right: 0.1vw;
+    margin-left: 0.2vw;
+    font-size: 1.15vw;
+}
+
+.weather:hover{
+    background-color: rgba(255, 255, 255, 0.53);
+    transform: scale(1.1);
+}

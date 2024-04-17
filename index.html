@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="search">
+        <div class="iconStyle">
+            <img class="iconSearch" src="Photo/icon_search.png" alt=""/>
+            <input class="searchLine" type="text" placeholder="Введите город..."/>
+        </div>
+    </div>
+    <div class="elements">
+        <div class="element">
+            <div class="weather" draggable="true">
+                <div class="btnClose" onclick="this.parentElement.parentElement.remove(); Upd()"></div>
+                <div class="cityName">
+                    <p class="text city text_js">London</p>
+                </div>
+                <div class="mainInfo">
+                    <div class="mainTemp">
+                        <p class="text temp text_js">9</p>
+                        <div class="feelsLike">
+                            <p class="text tempFeelsLike">Ощущается как: </p>
+                            <p class="text tempFeelsLike text_js">2</p>
+                        </div>
+                    </div>
+                    <div class="mainWeather">
+                        <img class="weatherIcon" src="Photo/01n.png" alt=""/>
+                        <p class="text weatherDescription text_js">Clear</p>
+                    </div>
+                </div>
+                <div class="maxMinTemp">
+                    <img class="weatherIconTemp" src="Photo/Tmax.png" alt=""/>
+                    <p class="text tempMaxMin text_js">20</p>
+                    <img class="weatherIconTemp" src="Photo/Tmin.png" alt=""/>
+                    <p class="text tempMaxMin text_js">3</p>
+                </div>
+                <div class="moreInfo">
+                    <div class="infoElem">
+                        <img class="weatherIconTemp" src="Photo/Speed_wind.png" alt=""/>
+                        <p class="text textInfoElem text_js">15</p>
+                    </div>
+                    <div class="infoElem">
+                        <img class="weatherIconTemp" src="Photo/Pressure.png" alt=""/>
+                        <p class="text textInfoElem text_js">15</p>
+                    </div>
+                    <div class="infoElem">
+                        <img class="weatherIconTemp" src="Photo/Humidity.png" alt=""/>
+                        <p class="text textInfoElem text_js">15</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
